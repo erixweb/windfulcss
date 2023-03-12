@@ -38,6 +38,9 @@ header p {
     color: rgb(225, 231, 236);
     font-size: 18px;
 }
+header .buttons a:nth-child(2) {
+    margin-left: 20px;
+}
 
 /*
     Main
@@ -126,5 +129,23 @@ pre code {display:block;overflow-x:auto;padding:1em}code {padding:3px 5px}.hljs{
     #example div:nth-child(2) {
         width: 100%;
         max-width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .buttons a {
+        width: 100%;
+        margin-top: 20px;
+    }
+    header .buttons a:nth-child(2) {
+        margin-left: 0;
     }
 }
