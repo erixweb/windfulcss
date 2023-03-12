@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windful.css 🍃</title>
+    <script type="module" defer>
+        import { getAsideProps } from "/component/aside.js"
+        let props = ""
+        getAsideProps().forEach(el => {
+            props = props + el
+        })
+        document.querySelector("aside .links").innerHTML = props
+    </script>
+    <link rel="icon" href="/static/windful.webp">
+    <link rel="stylesheet" href="/static/docs.css">
+</head>
+<body>
+    <aside>
+        <a href="/" class="img">
+            <img src="/static/windful.webp" alt="">
+            <h1>Windful</h1>
+        </a>
+        <div class="links">
+            <span>
+                Cargando ♻️
+            </span>
+        </div>
+    </aside>
+    <main>
+        <h1>
+            Width
+        </h1>
+        <p>
+            En Windful hay varias medidas de anchura para tu página. Para tu width, puedes utilizar pixeles o porcentaje, acabado en <hl>p</hl>. Aquí están todas las posibilidades:
+        </p>
+        <div class="posibilities">
+                w-16 <br/>
+                w-32 <br/>
+                w-64 <br/>
+                w-248 <br/>
+                w-500 <br/><br/>
+                w-16p <br/>
+                w-32p <br/>
+                w-64p <br/>
+                w-80p <br/>
+                w-100p <br/>
+        </div>
+        <h1>
+            Height
+        </h1>
+        <p>
+            Para el alto de un elemento, hay varias posibilidades, al igual que en el width, hay algunas medidas en porcentaje (p). Aquí todas las posibilidades:
+        </p>
+        <div class="posibilities">
+            h-16 <br/>
+            h-32 <br/>
+            h-64 <br/>
+            h-128 <br/> <br/>
+            h-100p <br/>
+        </div>
+    </main>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script type="module" defer>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>

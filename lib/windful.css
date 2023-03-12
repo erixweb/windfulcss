@@ -1,0 +1,402 @@
+/*
+    Variables
+*/
+:root {
+    --hsw-opacity: 0.6;
+}
+/*
+    Margins & Paddings
+*/
+.m-auto {
+    margin: auto;
+}
+.p-auto {
+    padding: auto;
+}
+.p-0 {
+    padding: 0px;
+}
+.p-8 {
+    padding: 8px;
+}
+.p-12 {
+    padding: 12px;
+}
+.p-16 {
+    padding: 16px;
+}
+.p-32 {
+    padding: 32px;
+}
+.mt-0 {
+    margin-top: 0px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.ml-0 {
+    margin-left: 0px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.ml-40 {
+    margin-left: 40px;
+}
+.mr-0 {
+    margin-right: 0px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+/*
+    Backgrounds
+*/
+.bg-dark {
+    background-color: #000;
+}
+.bg-light {
+    background-color: #fff;
+}
+.bg-lightsmooth {
+    background-color: #f1f1f1;
+}
+.bg-darksmooth {
+    background-color: rgb(15, 23, 42);
+}
+.bg-darkium {
+    background-color: rgb(30 41 59);
+}
+.bg-blue-100 {
+    background-color: rgb(48, 127, 255);
+}
+.bg-purple {
+    background-color: rgb(106, 103, 255);
+}
+/*
+    Transitions (ms)
+*/
+.t-150 {
+    transition: 150ms;
+}
+.t-250 {
+    transition: 250ms;
+}
+.t-500 {
+    transition: 500ms;
+}
+.t-1000 {
+    transition: 1s;
+}
+/*
+    Shadows & Hovers
+*/
+/*
+    Hover shadow white
+*/
+.hsl-5:hover {
+    box-shadow: 5px 5px 5px rgb(255, 255, 255, var(--hsw-opacity));
+}
+/*
+    Hover shadow black
+*/
+.hsd-5:hover {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, var(--hsw-opacity));
+}
+/*
+    Static shadows
+*/
+.sl-5 {
+    box-shadow: 5px 5px 5px rgb(255, 255, 255, var(--hsw-opacity));
+}
+.sd-5 {
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, var(--hsw-opacity));
+}
+/*
+    Width & Height
+*/
+.w-16 {
+    width: 16px;
+}
+.w-32 {
+    width: 32px;
+}
+.w-64 {
+    width: 64px;
+}
+.w-128 {
+    width: 128px;
+}
+.w-248 {
+    width: 128px;
+}
+.w-500 {
+    width: 128px;
+}
+.w-16p {
+    width: 16%;
+}
+.w-32p {
+    width: 32%;
+}
+.w-64p {
+    width: 64%;
+}
+.w-80p {
+    width: 80%;
+}
+.w-100p {
+    width: 100%;
+}
+.h-16 {
+    height: 16px;
+}
+.h-32 {
+    height: 32px;
+}
+.h-64 {
+    height: 64px;
+}
+.h-128 {
+    height: 128px;
+}
+.h-100p {
+    height: 100%;
+}
+/*
+    Responsive
+*/
+.mh-128 {
+    min-height: 128px;
+}
+.mw-100p {
+    max-width: 100%;
+}
+.mw-80p {
+    max-width: 80%;
+}
+.mw-40p {
+    max-width: 40%;
+}
+.mw-20p {
+    max-width: 20%;
+}
+.mw-1024 {
+    max-width: 1024px;
+}
+.mw-720 {
+    max-width: 720px;
+}
+.mw-428 {
+    max-width: 428px;
+}
+/*
+    Border-radius
+*/
+.radius-5 {
+    border-radius: 5px;
+}
+.radius-10 {
+    border-radius: 10px;
+}
+.radius-16 {
+    border-radius: 16px;
+}
+.radius-round {
+    border-radius: 9999px;
+}
+.rem-dec {
+    text-decoration: none;
+}
+.cover {
+    object-fit: cover;
+}
+.fill {
+    object-fit: fill;
+}
+.contain {
+    object-fit: contain;
+}
+/*
+    Font
+*/
+.ff-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ff-sysui {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.bold {
+    font-weight: 600;
+}
+.extrabold {
+    font-weight: 800;
+}
+.font-white {
+    color: #fff;
+}
+.font-gray {
+    color: rgb(159, 159, 159);
+}
+.font-black {
+    color: black;
+}
+.lh-15 {
+    line-height: 15px;
+}
+.lh-20 {
+    line-height: 20px;
+}
+.lh-40 {
+    line-height: 40px;
+}
+.lh-100vh {
+    line-height: 100vh;
+}
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: start;
+}
+/*
+    Display
+*/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    Cursor
+*/
+.pointer {
+    cursor: pointer;
+}
+/*
+    Border colors
+*/
+.bd-1 {
+    border: 1px solid black;
+}
+.bd-3 {
+    border: 3px solid black;
+}
+.bd-8 {
+    border: 8px solid black;
+}
+.bgray-1 {
+    border: 1px solid rgb(215, 215, 215);
+}
+.bgray-3 {
+    border: 3px solid rgb(215, 215, 215);
+}
+.bgray-8 {
+    border: 8px solid rgb(215, 215, 215);
+}
+.bl-1 {
+    border: 1px solid white;
+}
+.bl-3 {
+    border: 3px solid white;
+}
+.bl-8 {
+    border: 8px solid white;
+}
+.b-none {
+    border: none;
+}
+.outl-none {
+    outline: none;
+}
+/*
+    Buttons
+*/
+.btn-blue {
+    color: #fff;
+    background-color: #0EA5E9;
+}
+.btn-blue:hover {
+    background-color: #0bb2ff;
+}
+.btn-green {
+    color: #fff;
+    background-color: #01d11a;
+}
+.btn-green:hover {
+    background-color: #00de1a;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #dc2e2e;
+}
+.btn-red:hover {
+    background-color: #ff2e2e;
+}
+/*
+    Floating
+*/
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+/*
+    Highlight 
+*/
+.hl-blue {
+    color: #0EA5E9;
+    font-weight: 600;
+}
+.hl-green {
+    color: #04da1d;
+    font-weight: 600;
+}

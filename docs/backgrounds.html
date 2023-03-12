@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windful.css 🍃</title>
+    <script type="module" defer>
+        import { getAsideProps } from "/component/aside.js"
+        let props = ""
+        getAsideProps().forEach(el => {
+            props = props + el
+        })
+        document.querySelector("aside .links").innerHTML = props
+    </script>
+    <link rel="icon" href="/static/windful.webp">
+    <link rel="stylesheet" href="/static/docs.css">
+</head>
+<body>
+    <aside>
+        <a href="/" class="img">
+            <img src="/static/windful.webp" alt="">
+            <h1>Windful</h1>
+        </a>
+        <div class="links">
+            <span>
+                Cargando ♻️
+            </span>
+        </div>
+    </aside>
+    <main>
+        <h1>
+            Backgrounds
+        </h1>
+        <p>
+            Windful tiene unos cuantos fondos con los que pueden personalizar tu página web. Aquí todas las posibilidades:
+        </p>
+        <div class="posibilities">
+            bg-dark <br/>
+            bg-darksmooth <br/>
+            bg-darkium <br/> <br/>
+            bg-light <br/>
+            bg-lightsmooth <br/> <br/>
+            bg-blue-100
+        </div>
+<pre>
+<code>
+<xmp>
+<div class="bg-blue-100 w-128 mw-100p h-32">
+    Hello world
+</div>
+</xmp>
+</code>
+</pre>
+    </main>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script type="module" defer>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>

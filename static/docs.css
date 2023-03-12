@@ -1,0 +1,86 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(15, 23, 42);
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 0.6fr 2fr;
+}
+/*
+    Aside
+*/
+aside {
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(9, 13, 25);
+}
+aside .img {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+aside .links {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+aside .links a {
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;
+    text-align: start;
+}
+aside .links a:visited {
+    color: #61aeee;
+}
+aside h1 {
+    margin-left: 0px;
+}
+aside img {
+    margin-left: 0px;
+    width: 80px;
+    height: 80px;
+}
+/*
+    Main
+*/
+main {
+    max-width: 50rem;
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+main h1, main p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hl {
+    color: #0EA5E9;
+    font-weight: 600;
+}
+/*
+    Posibilities
+*/
+.posibilities {
+    padding: 16px;
+    width: 100%;
+    background-color: rgb(9, 13, 25);
+    color: rgb(206, 204, 221);
+    font-weight: 600;
+}
+/*
+    Highlight
+*/
+pre code {display:block;overflow-x:auto;padding:1em}code {padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75; font-weight: 600;}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}

@@ -1,0 +1,130 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(15, 23, 42);
+}
+/*
+    Header
+*/
+header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding-bottom: 20px;
+    background: linear-gradient(180deg, rgb(15, 23, 42), rgb(20, 30, 52), rgb(20, 32, 57));
+}
+header h1 {
+    width: 100%;
+    max-width: 50rem;
+    padding: 10px;
+    text-align: center;
+    font-size: 3.25rem;
+}
+header p {
+    width: 100%;
+    max-width: 50rem;
+    padding: 10px;
+    text-align: center;
+    color: rgb(225, 231, 236);
+    font-size: 18px;
+}
+
+/*
+    Main
+*/
+main {
+    padding: 10px;
+    width: 100%;
+    max-width: 70rem;
+}
+main p {
+    width: 100%;
+    max-width: 50rem;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/*
+    Section
+*/
+section {
+    padding-bottom: 20px;
+}
+section h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+/*
+    Examples
+*/
+#example {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#example div {
+    margin: 10px;
+}
+#example div:nth-child(2){
+    max-width: 700px;
+}
+section#docs {
+    margin-top: 60px;
+}
+section#docs * {
+    margin-left: 0px;
+    padding: 0px;
+    text-align: start;
+}
+section#docs svg {
+    padding: 16px;
+    width: 80px;
+    height: 80px;
+    background-color: #61aeee;
+    border:  5px solid #3b81bb;
+    border-radius: 999999px;
+}
+/*
+    Code
+*/
+pre, code{
+    font-family: Operator Mono,Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    color: #fff;
+}
+pre, code {
+    tab-size: 4;
+    max-width: 100%;
+}
+/*
+    Highlight
+*/
+pre code {display:block;overflow-x:auto;padding:1em}code {padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75; font-weight: 600;}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}
+/*
+    Responsive
+*/
+@media (max-width: 1100px) {
+    #example{
+        display: flex;
+        flex-direction: column;
+    }
+    #example div:nth-child(2) {
+        width: 100%;
+        max-width: 100%;
+    }
+}

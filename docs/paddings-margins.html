@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windful.css 🍃</title>
+    <script type="module" defer>
+        import { getAsideProps } from "/component/aside.js"
+        let props = ""
+        getAsideProps().forEach(el => {
+            props = props + el
+        })
+        document.querySelector("aside .links").innerHTML = props
+    </script>
+    <link rel="icon" href="/static/windful.webp">
+    <link rel="stylesheet" href="/static/docs.css">
+</head>
+<body>
+    <aside>
+        <a href="/" class="img">
+            <img src="/static/windful.webp" alt="">
+            <h1>Windful</h1>
+        </a>
+        <div class="links">
+            <span>
+                Cargando ♻️
+            </span>
+        </div>
+    </aside>
+    <main>
+        <h1>
+            Paddings & Margins
+        </h1>
+        <p>
+            Para ponerle paddings o margenes a un elemento, se utiliza la abreviatura p- (padding) & m- (margin). Es decir, si queremos darle un padding de 8px a un elemento, pondremos p-8. 
+        </p>
+        <h1>
+            Posibilidades para paddings
+        </h1>
+        <div class="posibilities">
+            p-auto <br/>
+            p-0 <br/>
+            p-8 <br/>
+            p-12 <br/>
+            p-16 <br/>
+            p-32 <br/>
+        </div>
+        <h1>
+            Posibilidades para margins
+        </h1>
+        <p>
+            Para los margenes puedes usar mt (margin-top), mb (margin-bottom), ml (margin-left), mr (margin-right). 
+        </p>
+        <div class="posibilities">
+            m-auto <br/>
+            m[t, b, l, r]-0 <br/>
+            m[t, b, l, r]-10 <br/>
+            m[t, b, l, r]-20 <br/>
+            m[t, b, l, r]-40 <br/>
+        </div>
+        <h1>
+            Ejemplo de código
+        </h1>
+<pre>
+<code>
+<xmp>
+<div class="p-8">
+    Hello world
+</div>
+</xmp>        
+</code>
+</pre>
+    </main>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script type="module" defer>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>
