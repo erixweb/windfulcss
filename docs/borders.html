@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windful.css 🍃</title>
+    <script type="module" defer>
+        import { getAsideProps } from "/component/aside.js"
+        let props = ""
+        getAsideProps().forEach(el => {
+            props = props + el
+        })
+        document.querySelector("aside .links").innerHTML = props
+    </script>
+    <link rel="icon" href="/static/windful.webp">
+    <link rel="stylesheet" href="/static/docs.css">
+    <link rel="stylesheet" href="/lib/windful.min.css">
+</head>
+<body>
+    <aside>
+        <a href="/" class="img">
+            <img src="/static/windful.webp" alt="">
+            <h1>Windful</h1>
+        </a>
+        <div class="links">
+            <span>
+                Cargando ♻️
+            </span>
+        </div>
+    </aside>
+    <main>
+        <h1>
+            Border colors & Radius
+        </h1>
+        <p>
+            Windful tiene varios colores para tus bordes & diferentes cantidades para el border-radius. Para los bordes, se comienza con la abreviatura "b" y después la inicial del color, algunos, se escribe el nombre del color entero.
+        </p>
+        <p>
+            Para los border-radius, se comienza con radius y después, el numero de pixeles que se tienen que redondear, separado por un guion.
+        </p>
+<pre>
+<code>
+<xmp>
+<div class="p-16 w-128 h-128 flex-center mw-100p radius-round bg-blue-100 ml-0">
+    Mi caja
+</div>
+</xmp>
+</code>
+</pre>
+        <div class="p-16 w-128 h-128 flex-center mw-100p radius-round bg-blue-100 ml-0">
+            Mi caja
+        </div>
+        <p>
+            Como se muestra en el ejemplo, se puede usar <strong class="hl-blue">radius-round</strong> para redondear un elemento.
+        </p>
+        <div class="posibilities">
+            radius-5 <br />
+            radius-10 <br />
+            radius-16 <br />
+            radius-round <br />
+        </div>
+        <p>
+            Ahora, para añadir colores a los bordes, podemos añadir lo siguiente:
+        </p>
+<pre>
+<code>
+<xmp>
+<div class="bl-3 p-16 w-128 h-128 flex-center mw-100p radius-round bg-blue-100 ml-0">
+    Mi caja
+</div>
+</xmp>
+</code>
+</pre>
+        <div class="bl-3 p-16 w-128 h-128 flex-center mw-100p radius-round bg-blue-100 ml-0">
+            Mi caja
+        </div>
+        <p>
+            Todas las posibilidades:
+        </p>
+        <div class="posibilities">
+            bd-1 <br />
+            bd-3 <br />
+            bd-8 <br />
+            bgray-1 <br />
+            bgray-3 <br />
+            bgray-8 <br />
+            bl-1<br />
+            bl-3 <br />
+            bl-8<br />
+            b-none
+        </div>
+    </main>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script type="module" defer>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>
