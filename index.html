@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windful.css 🍃</title>
-    <link rel="icon" href="/static/windful.webp">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js" defer></script>
+    <link rel="icon" href="static/windful.webp">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="lib/windful.min.css">
 </head>
 <body>
     <header>
         <div>
+            <div class="text-center">
+                <img src="static/windful.webp" alt="Windful.css es una librería para principiantes">
+            </div>
             <h1>
-                La librería de CSS para principiantes
+                Windful
             </h1>
-            <p>
-                Windful.css es una librería de CSS para principiantes basado en Tailwind.css. Compuesta por más de 300 líneas de CSS, es una librería muy ligera.
+            <p class="fs-24">
+                Empieza a explorar más allá del CSS normal.
             </p>
-            <div class="buttons mt-20 text-center">
+            <div class="buttons mt-40 text-center">
                 <a 
                     href="/lib/windful.min.css"
                     download
-                    class="btn-blue b-none radius-10 p-12 fs-18 bold pointer rem-dec"
+                    class="btn-blue b-none radius-round p-12 fs-18 bold pointer rem-dec"
                 >   
                     Descargar v1.0
                 </a>
 
                 <a 
                     href="/docs/paddings-margins"
-                    class="btn-green b-none radius-10 p-12 fs-18 bold pointer rem-dec"
+                    class="font-white bgray-3 p-12 fs-18 bold pointer rem-dec radius-round"
                 >
                     Documentación
                 </a>
@@ -37,6 +41,14 @@
         </div>
     </header>
     <main>
+        <section>
+            <h1>
+                La librería de CSS para principiantes
+            </h1>
+            <p>
+                Windful.css es una librería de CSS para principiantes basado en Tailwind.css. Compuesta por más de 300 líneas de CSS, es una librería muy ligera.
+            </p>
+        </section>
         <!-- EXAMPLE -->
         <section id="example">
             <div class="mt-20 flex-row mh-128 w-100p float-left bg-darkium p-8 radius-10 mw-428">
@@ -97,8 +109,6 @@
             </p>
         </section>
     </main>
-
-    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
     <script type="module" defer>
         hljs.highlightAll()
     </script>
