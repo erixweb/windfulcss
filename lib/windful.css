@@ -319,6 +319,12 @@
 .pointer {
     cursor: pointer;
 }
+.help {
+    cursor: help;
+}
+.grab {
+    cursor: grab;
+}
 /*
     Border colors
 */

@@ -5,5 +5,6 @@ export function getAsideProps () {
         '<a href="/docs/backgrounds">Backgrounds</a>',
         '<a href="/docs/fonts">Font Family & Colors</a>',
         '<a href="/docs/borders">Border colors & Radius</a>',
+        '<a href="/docs/pointer">Pointer</a>',
     ]
 }
