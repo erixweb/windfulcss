@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windful.css 🍃</title>
+    <script type="module" defer>
+        import { getAsideProps } from "/component/aside.js"
+        let props = ""
+        getAsideProps().forEach(el => {
+            props = props + el
+        })
+        document.querySelector("aside .links").innerHTML = props
+    </script>
+    <link rel="icon" href="/static/windful.webp">
+    <link rel="stylesheet" href="/static/docs.css">
+    <link rel="stylesheet" href="/lib/windful.min.css">
+</head>
+<body>
+    <aside>
+        <a href="/" class="img">
+            <img src="/static/windful.webp" alt="">
+            <h1>Windful</h1>
+        </a>
+        <div class="links">
+            <span>
+                Cargando ♻️
+            </span>
+        </div>
+    </aside>
+    <main>
+        <h1>
+            Transitions
+        </h1>
+        <p>
+            Para aplicar transiciones a los elementos se usa la abreviatura t- y el numero. Las transiciones son en milesimas de segundo. Posibilidades:
+        </p>
+        <div class="posibilities">
+            t-150 <br />
+            t-250 <br />
+            t-500 <br />
+            t-1000 <br />
+        </div>
+<pre>
+<code>
+<xmp>
+<div class="w-128 mw-100 p-16 ff-arial ml-0 bg-blue-100" onmouseover="this.style.background = '#000'">
+    Transition
+</div>
+</xmp>
+</code>
+</pre>
+        <div class="w-128 mw-100 p-16 ff-arial ml-0 bg-blue-100 t-1000" onmouseover="this.style.background = '#000'" onmouseout="this.style.background = '#307fff'">
+            Transition
+        </div>
+    </main>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script type="module" defer>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>
