@@ -7,5 +7,7 @@ export function getAsideProps () {
         '<a href="/docs/borders">Border colors & Radius</a>',
         '<a href="/docs/pointer">Pointer</a>',
         '<a href="/docs/transition">Transition</a>',
+        '<h3>Elements</h3>',
+        '<a href="/docs/buttons">Buttons</a>',
     ]
 }
