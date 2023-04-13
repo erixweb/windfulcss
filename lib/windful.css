@@ -313,6 +313,19 @@
     justify-content: center;
     align-items: center;
 }
+.grid {
+    display: grid;
+}
+.gap-10 {
+    gap: 10px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-30 {
+    gap: 30px;
+}
+
 /*
     Cursor
 */
