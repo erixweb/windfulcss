@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windful.css 🍃</title>
+    <script type="module" defer>
+        import { getAsideProps } from "/component/aside.js"
+        let props = ""
+        getAsideProps().forEach(el => {
+            props = props + el
+        })
+        document.querySelector("aside .links").innerHTML = props
+    </script>
+    <link rel="icon" href="/static/windful.webp">
+    <link rel="stylesheet" href="/static/docs.css">
+    <link rel="stylesheet" href="/lib/windful.min.css">
+</head>
+<body>
+    <aside>
+        <a href="/" class="img">
+            <img src="/static/windful.webp" alt="">
+            <h1>Windful</h1>
+        </a>
+        <div class="links">
+            <span>
+                Cargando ♻️
+            </span>
+        </div>
+    </aside>
+    <main>
+        <h1>
+            Flex & Grid
+        </h1>
+        <p>
+            Aquí tienes cómo crear una caja flex:
+        </p>
+        <div class="posibilities">
+            flex-row <br />
+            flex-col <br />
+        </div>
+        <p>
+            Aquí tienes cómo crear una caja grid:
+        </p>
+        <div class="posibilities">
+            grid <br />
+        </div>
+    </main>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script type="module" defer>
+        hljs.highlightAll()
+    </script>
+</body>
+</html>
